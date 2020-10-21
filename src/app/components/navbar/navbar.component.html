@@ -1,0 +1,41 @@
+<nav class="header" *ngIf="color2 == 'white'">
+    <ul>
+        <li><a href="#" [ngStyle]="{'color': color2}">Inicio</a></li>
+        <li><a href="#" [ngStyle]="{'color': color2}">Acerca de Nosotros</a></li>
+        <li><a href="#" [ngStyle]="{'color': color2}">Historia</a></li>
+        <li><a href="#" [ngStyle]="{'color': color2}">Contacto</a></li>
+    </ul>
+    <ul class="idiomas" *ngIf="color2 == 'white'">
+        <li><a href="#" [ngStyle]="{'color': color2}">Es</a></li>
+        <li><a href="#" [ngStyle]="{'color': color2}">En</a></li>
+    </ul>
+</nav>
+
+    <div class="dropdown">
+        <button class="dropbtn">Menú</button>
+        <div class="dropdown-content">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de Nosotros</a>
+        <a href="#">Historia</a>
+        <a href="#">Contacto</a>
+        <a href="#">ES</a>
+        <a href="#">EN</a>
+        </div>
+        
+      </div>
+
+
+
+<nav class="footer" *ngIf="color2 == '#2b3049'">
+    <ul>
+        <li><a href="#" [ngStyle]="{'color': color2}">Inicio</a></li>
+        <li><a href="#" [ngStyle]="{'color': color2}">Acerca de Nosotros</a></li>
+        <li><a href="#" [ngStyle]="{'color': color2}">Historia</a></li>
+        <li><a href="#" [ngStyle]="{'color': color2}">Contacto</a></li>
+    </ul>
+    <ul class="logo" >
+        <img src="/assets/png/fill-2.png" srcset="/assets/png/fill-2@2x.png 2x,/assets/png/fill-2@3x.png 3x" class="Fill-2">
+    </ul> 
+</nav>
+
+

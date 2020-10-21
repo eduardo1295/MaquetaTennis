@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "homePageTennis"
+    }
+  },
+  "defaultProject": "homePageTennis",
+  "cli": {
+    "analytics": false
+  }
 }

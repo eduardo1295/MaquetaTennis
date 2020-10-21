@@ -1,0 +1,62 @@
+html, body { padding: 0; margin: 0;} 
+header{
+    width: 100%;
+    height: 785px;
+    padding: 0;
+    margin: 0;
+    background-image: url('/assets/img/group.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+    display: flex;
+    @media only screen and (max-width: 768px) {
+        height: 485px;
+        flex-direction: column;
+    }
+
+    .contenedor {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        border-left: 5px solid white;
+        @media only screen and (max-width: 768px) {
+            align-content: center;
+            justify-content: center;
+            border-left: none;
+        }
+        
+        .titulo{
+            // width: 709px;
+            // height: 257px;
+            
+            font-size: 53px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.28;
+            letter-spacing: -0.05px;
+            color: white;
+            padding: 144px 0 0 70px;
+            @media only screen and (max-width: 768px) {
+                padding: 75px;
+                justify-content: center;
+                text-align: center;
+                font-size: 40px;
+            }
+            span{
+                color: #cbe346;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.icono{
+    display: flex;
+    img {
+        width: 37px;
+        height: 37px;
+        object-fit: contain;
+        padding: 25px 36px 0;
+        float: left;
+      }
+}

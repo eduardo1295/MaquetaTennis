@@ -1,0 +1,21 @@
+<section id="products">
+    <div class="contenedor info">
+        <p>Nuestras <br>  <span> Raquetas</span>  </p>
+        <span>Conoce nustras raquetas y aprende a jugar cómo un profesional</span>
+        
+        <div class="botones">
+            <img src="assets/png/group-copy-2.png" (click)="cambioMas();" alt="">
+            <img src="assets/png/group-copy-2.png" (click)="cambioMenos();" alt="">
+        </div>
+    </div>
+    <div class="item">
+        <div class="images animated fadeIn" id="img_{{x}}"  *ngFor="let image of images, let x = index" style="order: {{x+1}} ">
+            <div *ngIf="bandera[x] == true" class="animated fadeIn fast">
+                <p> {{ x + 1 }} </p>
+                <img [src]="image"  alt=""  >
+            </div>
+        </div>
+    </div>
+</section>
+
+
